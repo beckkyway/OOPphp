@@ -23,6 +23,9 @@ class Cartridges
         return $this;
     }
 }
+
+//тут тоже идет наследие 
+// и в данном случае код выводит только положительно число
 class BoxCartridges extends Cartridges
 {
     public function __construct(int $carti)
@@ -39,6 +42,7 @@ class BoxCartridges extends Cartridges
         return $this;
     }
 
+    //функция валидайте применяется как обьеденине в данном случае
     public function validate($carti)
     {
         if ($carti < 1) {
